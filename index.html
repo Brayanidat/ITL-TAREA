@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media (max-width: 1280px){
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: black;
+            max-width: 100%;
+            height: 200px;
+            padding: 10px;
+           
+        }
+        h1{
+            padding-top: 15px;
+            color: aquamarine;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 50px;
+            animation: mover1 5s ease-in-out infinite alternate;
+        }
+
+        @keyframes mover1 {
+            0%{
+                color: rgb(223, 146, 44);
+                transform: translateX(20px);
+            }
+            50%{
+                color: blueviolet;
+            }
+            100%{
+                color: rgb(229, 50, 50);
+                transform: translateX(-20px)
+            }
+        }
+        button{
+            color: rgb(29, 28, 28);
+            background-color: rgb(74, 74, 235);
+            padding: 5px 10px;
+            border-radius: 15px;
+            border: 0;
+            cursor: pointer;
+            animation: mover 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes mover {
+            from{
+                transform: translateY(5px);
+            }
+            to{
+                transform: translateY(-5px);
+            }
+            
+        }
+
+        button:hover{
+            background-color: rgb(255, 170, 60);
+            color: black;
+            font-weight: bold;
+        }
+       }
+
+    </style>
+</head>
+<body>
+    <div>
+    <h1>PROBLEMAS PROPUESTOS</h1>
+    <button onclick="notas()">RESOLVER</button>
+    </div>
+
+    <script src="1.js"></script>
+</body>
+</html>
